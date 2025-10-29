@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Staff Portal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center" />
+
+        <!-- Button 1 -->
+        <Button
+            android:id="@+id/btnDigitalMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Access the Digital Menu"
+            android:layout_marginTop="40dp"
+            android:background="#000000"
+            android:textColor="#FFFFFF" />
+
+        <!-- Button 2 -->
+        <Button
+            android:id="@+id/btnGuestReservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Access Guest Reservations"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:textColor="#FFFFFF" />
+
+        <!-- Notification Settings Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E8E1F2"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/tvNotificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification Settings"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNotificationDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Would you like to receive a notification each time a reservation is made?"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp" />
+
+            <!-- Simple toggle buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:background="#DDDDDD"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:layout_marginStart="16dp"
+                    android:background="#6200EE"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Log Out -->
+        <TextView
+            android:id="@+id/tvLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textSize="14sp"
+            android:layout_gravity="start"
+            android:textColor="#888888" />
+
+    </LinearLayout>
+
+</ScrollView>
